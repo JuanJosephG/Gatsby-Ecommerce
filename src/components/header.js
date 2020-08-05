@@ -20,7 +20,7 @@ const Header = ({ siteTitle }) => {
             <Link to="/">Productos</Link>
           </MenuItem>
           <MenuItem margin>
-            <a href="https://www.gatsby.com">Gatsby</a>
+            <a href="https://www.gatsby.org">Gatsby</a>
           </MenuItem>
           <MenuItem margin>
             <Link to="/cart">
