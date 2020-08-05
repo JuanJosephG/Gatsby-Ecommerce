@@ -8,12 +8,15 @@ export const colors = {
   darkBlue: "#1c3643",
   lightBlue: "#1e5372",
   softGray: "#f6f8f9",
+  lightGreen: "#699b2c",
+  darkGreen: "#2d4a1a",
+  mainGrey: "#48575e",
 }
 
 export const StyledHeader = styled.header`
   background-image: linear-gradient(
     90deg,
-    ${colors.darkBlue},
+    ${colors.mainGrey},
     ${colors.lightBlue}
   );
   margin-bottom: 0;
@@ -28,11 +31,16 @@ export const StyledHeader = styled.header`
   justify-content: space-between;
   a {
     height: 100%;
-    font-size: 0.6rem;
+    font-size: 27px;
+  }
+  & h2 {
+    height: 100%;
+    margin: 0;
+    font-size: 1rem;
+    padding: 2rem 0.8rem;
   }
   & > a > img {
     margin: 0;
-    background-color: ${colors.green};
     height: 100%;
     padding: 0.5rem 0.8rem;
   }
@@ -216,7 +224,7 @@ export const StyledProductDetail = styled.div`
   height: 82vh;
   img {
     width: 100%;
-    object-fit: cover;
+    object-fit: contatin;
     object-position: center;
     margin: 0;
   }
@@ -329,13 +337,13 @@ export const MenuItem = styled.li`
 `
 
 export const Footer = styled.footer`
-  background-color: ${colors.darkBlue};
+  background-color: ${colors.darkGreen};
   color: white;
   display: flex;
   justify-content: center;
   align-items: center;
   padding: 2rem;
-  position: relative;
+  position: sticky;
   bottom: 0;
   a {
     color: ${colors.green};
